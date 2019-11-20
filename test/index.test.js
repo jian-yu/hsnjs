@@ -13,6 +13,7 @@ describe('test genMnemonic',function(){
 describe('test getAddress',function(){
     it('the length of mnemonic array must equal to 12',function(){
         let mnemonic = HSNWallet.genMnemonic();
+        HSNWallet.getECPairPriv(mnemonic)
         let address = HSNWallet.getAddress(mnemonic)
         console.log(address);
     });
