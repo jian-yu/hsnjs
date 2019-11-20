@@ -1,0 +1,25 @@
+{
+  "name": "hsnjs",
+  "version": "0.0.1",
+  "description": "the js lib for hsn wallet",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "hsn",
+    "hsnjs",
+    "wallet"
+  ],
+  "author": "xzjianyu",
+  "license": "MIT",
+  "dependencies": {
+    "bech32": "^1.1.3",
+    "bip32": "^1.0.2",
+    "bip39": "^2.5.0",
+    "bitcoinjs-lib": "^4.0.2",
+    "node-fetch": "^2.6.0",
+    "secp256k1": "^3.6.2"
+  }
+}
