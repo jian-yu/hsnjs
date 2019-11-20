@@ -21,7 +21,11 @@ let HSN = function (url, chainId) {
         throw new Error("chainId object was not set or invalid")
     }
 }
-
+/**
+ * HSN Network
+ * @param {*} url LCD URL
+ * @param {*} chainId 
+ */
 function network(url, chainId) {
     return new HSN(url, chainId);
 }
@@ -55,6 +59,13 @@ function sortObject(obj) {
     return result;
 }
 
+HSN.prototype.genMnemonic = function(){
+    return bip39.generateMnemonic()//the count of mnemonic is 12
+}
+
+/**
+ * set the Bech32MainPrefix for hsn network.
+ */
 HSN.prototype.setBech32MainPrefix = function (bech32MainPrefix) {
     this.bech32MainPrefix = bech32MainPrefix;
 
